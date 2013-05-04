@@ -1,0 +1,8 @@
+-classpath '/home/rohin/myworkspace/fixedfileformat2pojo/build/classes/main:/home/rohin/myworkspace/fixedfileformat2pojo/build/resources/main:/home/rohin/myworkspace/fixedfileformat2pojo/lib/hamcrest-all-1.3.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/junit-4.11.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/jackson-core-asl-1.9.12.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/javassist.jar'
+-d '/home/rohin/myworkspace/fixedfileformat2pojo/build/docs/javadoc'
+-doctitle 'fixedfileformat2pojo API'
+-quiet 
+-windowtitle 'fixedfileformat2pojo API'
+'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/factory/FileFactory.java'
+'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/classengine/FixedFormatI.java'
+'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/classengine/ClassCreator.java'
