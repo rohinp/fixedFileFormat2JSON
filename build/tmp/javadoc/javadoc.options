@@ -1,8 +1,10 @@
--classpath '/home/rohin/myworkspace/fixedfileformat2pojo/build/classes/main:/home/rohin/myworkspace/fixedfileformat2pojo/build/resources/main:/home/rohin/myworkspace/fixedfileformat2pojo/lib/hamcrest-all-1.3.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/junit-4.11.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/jackson-core-asl-1.9.12.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/javassist.jar'
+-classpath '/home/rohin/myworkspace/fixedfileformat2pojo/build/classes/main:/home/rohin/myworkspace/fixedfileformat2pojo/build/resources/main:/home/rohin/myworkspace/fixedfileformat2pojo/lib/hamcrest-all-1.3.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/junit-4.11.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/jackson-core-asl-1.9.12.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/jackson-mapper-asl-1.9.12.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/javassist.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/hamcrest-core-1.3.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/hamcrest-library-1.3.jar:/home/rohin/myworkspace/fixedfileformat2pojo/lib/jmock-2.6.0.jar'
 -d '/home/rohin/myworkspace/fixedfileformat2pojo/build/docs/javadoc'
 -doctitle 'fixedfileformat2pojo API'
 -quiet 
 -windowtitle 'fixedfileformat2pojo API'
-'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/factory/FileFactory.java'
+'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/factory/FileReaderFactory.java'
+'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/factory/JSONNodeFactory.java'
 '/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/classengine/FixedFormatI.java'
 '/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/classengine/ClassCreator.java'
+'/home/rohin/myworkspace/fixedfileformat2pojo/src/main/java/com/fix4mat2pojo/jsonconfig/parser/JsonParser.java'

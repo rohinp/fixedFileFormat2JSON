@@ -14,15 +14,17 @@ public class JSONNodeFactoryTest {
 
 	@Test
 	public void itShouldCreateJsonNode() throws JsonProcessingException, IOException {
-		//given
-		String filepath = "/home/rohin/myworkspace/fixedfileformat2pojo/jsonconfig/customer.json";
+		//setup - data
+		String filepath = "/home/rohin/myworkspace/fixedfileformat2pojo/jsonconfig/employee.json";
 		BufferedReader fileReader = FileReaderFactory.makeFile(filepath);
 		
-		//when 
+		//exercise 
 		JsonNode jsonNode = JSONNodeFactory.makeJSONNode(fileReader);
 		
-		//then
+		//verify
 		assertNotNull(jsonNode);
+		
+		//no teardown needed
 	}
 
 }

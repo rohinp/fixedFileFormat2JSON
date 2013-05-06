@@ -11,12 +11,16 @@ public class FileReaderFactoryTest {
 
 	@Test
 	public void itShouldReturnObjectToReadFile() throws FileNotFoundException {
-		//given
-		String filepath = "/home/rohin/myworkspace/fixedfileformat2pojo/jsonconfig/customer.json";
-		//when
+		//setup - data
+		String filepath = "/home/rohin/myworkspace/fixedfileformat2pojo/jsonconfig/employee.json";
+		
+		//exercise
 		BufferedReader fileReader = FileReaderFactory.makeFile(filepath); 
-		//then
+		
+		//verify
 		assertNotNull(fileReader);
+		
+		//no teardown needed
 	}
 
 }
