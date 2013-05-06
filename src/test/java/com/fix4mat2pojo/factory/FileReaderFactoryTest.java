@@ -7,12 +7,14 @@ import java.io.FileNotFoundException;
 
 import org.junit.Test;
 
+import com.fix4mat2pojo.utility.LocalProperties;
+
 public class FileReaderFactoryTest {
 
 	@Test
 	public void itShouldReturnObjectToReadFile() throws FileNotFoundException {
 		//setup - data
-		String filepath = "/home/rohin/myworkspace/fixedfileformat2pojo/jsonconfig/employee.json";
+		String filepath = LocalProperties.getString("jsonfilepath"); //$NON-NLS-1$
 		
 		//exercise
 		BufferedReader fileReader = FileReaderFactory.makeFile(filepath); 

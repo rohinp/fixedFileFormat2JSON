@@ -11,13 +11,14 @@ import org.junit.Test;
 
 import com.fix4mat2pojo.factory.FileReaderFactory;
 import com.fix4mat2pojo.factory.JSONNodeFactory;
+import com.fix4mat2pojo.utility.LocalProperties;
 
 public class JsonParserTest {
 
 	@Test
 	public void itShouldREturntheClassNameFromJsonObject() throws JsonProcessingException, IOException {
 		//setup data
-		String filepath = "/home/rohin/myworkspace/fixedfileformat2pojo/jsonconfig/employee.json";
+		String filepath = LocalProperties.getString("jsonfilepath");
 		BufferedReader fileReader = FileReaderFactory.makeFile(filepath);
 		JsonNode jsonNode = JSONNodeFactory.makeJSONNode(fileReader);
 		

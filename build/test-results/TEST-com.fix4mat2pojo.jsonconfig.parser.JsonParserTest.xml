@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="localhost" name="com.fix4mat2pojo.jsonconfig.parser.JsonParserTest" tests="1" time="0.355" timestamp="2013-05-05T18:18:29">
-  <properties />
-  <testcase classname="com.fix4mat2pojo.jsonconfig.parser.JsonParserTest" name="itShouldREturntheClassNameFromJsonObject" time="0.279" />
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.fix4mat2pojo.jsonconfig.parser.JsonParserTest" tests="1" failures="0" errors="0" timestamp="2013-05-06T10:49:40" hostname="U2-DPE-CPB-0072" time="0.004">
+  <properties/>
+  <testcase name="itShouldREturntheClassNameFromJsonObject" classname="com.fix4mat2pojo.jsonconfig.parser.JsonParserTest" time="0.004"/>
   <system-out><![CDATA[Employee
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
