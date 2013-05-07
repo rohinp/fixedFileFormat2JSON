@@ -3,10 +3,10 @@ fixedfileformat2pojo
 
 This project came with an intention similar to fixedformat4j.
 The difference is 
-1> Instead of user creating classes with getter setters
+1> Instead of user creating classes with getter setters.
 2> putting all that anotations for configuration on functions inside the class.
-5> The project aims on user creating just a json configuration.
-6> The system will read fixed format files and return objects as per configured in json.
+3> The project aims on user creating just a json configuration.
+4> The system will read fixed format files and return objects as per configured in json.
 
 Example Json will look like this:
 {
