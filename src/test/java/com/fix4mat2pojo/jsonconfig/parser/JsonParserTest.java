@@ -1,37 +1,63 @@
 package com.fix4mat2pojo.jsonconfig.parser;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Iterator;
 
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonProcessingException;
 import org.junit.Test;
 
-import com.fix4mat2pojo.factory.FileReaderFactory;
-import com.fix4mat2pojo.factory.JSONNodeFactory;
 import com.fix4mat2pojo.utility.LocalProperties;
+import com.fix4matpojo.service.JsonNodeObjectCreatorService;
 
 public class JsonParserTest {
 
 	@Test
-	public void itShouldREturntheClassNameFromJsonObject() throws JsonProcessingException, IOException {
-		//setup data
-		String filepath = LocalProperties.getString("jsonfilepath");
-		BufferedReader fileReader = FileReaderFactory.makeFile(filepath);
-		JsonNode jsonNode = JSONNodeFactory.makeJSONNode(fileReader);
-		
-		//setup - expected
+	public void itShouldREturntheClassNameFromJsonObject()
+			throws JsonProcessingException, IOException {
+		// setup data
+		JsonNodeObjectCreatorService jsonNodeObjectCreatorService = new JsonNodeObjectCreatorService();
+		JsonNode jsonNode = jsonNodeObjectCreatorService
+				.getJsonNodeObject(LocalProperties.getString("jsonfilepath"));
+
+		// setup - expected
 		String expected = "Employee";
-		
-		//exercise
+
+		// exercise
 		JsonParser jsonParser = new JsonParser(jsonNode);
 		String actual = jsonParser.getJSONClassName();
-		
-		//verify
+
+		// verify
 		assertEquals(expected, actual);
 		System.out.println(actual);
+	}
+	
+	@Test
+	public void itShouldREturntheFieldsJsonNodeFromJsonObject()
+			throws JsonProcessingException, IOException {
+		// setup data
+		JsonNodeObjectCreatorService jsonNodeObjectCreatorService = new JsonNodeObjectCreatorService();
+		JsonNode jsonNode = jsonNodeObjectCreatorService
+				.getJsonNodeObject(LocalProperties.getString("jsonfilepath"));
+
+		// exercise
+		JsonParser jsonParser = new JsonParser(jsonNode);
+		JsonNode jsonNodeFields = jsonParser.getJSONFields();
+
+		// verify
+		assertNotNull(jsonNodeFields);
+		Iterator<JsonNode> ite = jsonNodeFields.getElements();
+		
+		while (ite.hasNext()) {
+			JsonNode temp = ite.next();
+			Iterator<JsonNode> tempite = temp.getElements();
+			while (tempite.hasNext()) {
+				System.out.println(tempite.getTextValue());
+			}
+		}
 	}
 
 }

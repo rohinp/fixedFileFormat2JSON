@@ -21,4 +21,8 @@ public class JsonParser {
 		return this.jsonNode.path("name").getTextValue().toString();
 	}
 	
+	public JsonNode getJSONFields(){
+		return this.jsonNode.path("Fields");
+	}
+	
 }
