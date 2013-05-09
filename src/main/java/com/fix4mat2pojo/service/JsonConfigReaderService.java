@@ -1,4 +1,4 @@
-package com.fix4matpojo.service;
+package com.fix4mat2pojo.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;

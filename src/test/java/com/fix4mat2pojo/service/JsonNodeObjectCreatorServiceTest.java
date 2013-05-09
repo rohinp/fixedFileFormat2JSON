@@ -1,4 +1,4 @@
-package com.fix4matpojo.service;
+package com.fix4mat2pojo.service;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -9,6 +9,7 @@ import org.codehaus.jackson.JsonProcessingException;
 import org.junit.Test;
 
 import com.fix4mat2pojo.jsonparser.JsonConfigReader;
+import com.fix4mat2pojo.service.JsonConfigReaderService;
 import com.fix4mat2pojo.utility.LocalProperties;
 
 public class JsonNodeObjectCreatorServiceTest {

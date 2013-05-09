@@ -11,8 +11,8 @@ import org.codehaus.jackson.JsonProcessingException;
 import org.junit.Test;
 
 import com.fix4mat2pojo.jsonparser.JsonConfigReader;
+import com.fix4mat2pojo.service.JsonConfigReaderService;
 import com.fix4mat2pojo.utility.LocalProperties;
-import com.fix4matpojo.service.JsonConfigReaderService;
 
 public class JsonConfigReaderTest {
 
