@@ -4,28 +4,28 @@
 		{
 			"name":"eid",
 			"length":"5",
-			"datatype":"long",
+			"type":"long",
 			"filling":"space",
 			"index":"1"
 		},
 		{
 			"name":"fname",
 			"length":"10",
-			"datatype":"string",
+			"type":"string",
 			"filling":"space",
 			"index":"2"
 		},
 		{
 			"name":"lname",
 			"length":"10",
-			"datatype":"string",
+			"type":"string",
 			"filling":"space",
 			"index":"3"
 		},
 		{
 			"name":"salary",
 			"length":"8",
-			"datatype":"double",
+			"type":"double",
 			"fillingleft":"space",
 			"fillingright":"0",
 			"beforedecimal":"5",

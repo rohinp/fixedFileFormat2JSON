@@ -8,6 +8,7 @@ import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonProcessingException;
 import org.junit.Test;
 
+import com.fix4mat2pojo.jsonparser.JsonConfigReader;
 import com.fix4mat2pojo.utility.LocalProperties;
 
 public class JsonNodeObjectCreatorServiceTest {
@@ -17,10 +18,10 @@ public class JsonNodeObjectCreatorServiceTest {
 			IOException {
 		// setup - data
 		String filepath = LocalProperties.getString("jsonfilepath");
-		JsonNodeObjectCreatorService jsonNodeObjectCreatorService = new JsonNodeObjectCreatorService();
+		JsonConfigReaderService jsonNodeObjectCreatorService = new JsonConfigReaderService();
 
 		// exercise
-		JsonNode jsonNode = jsonNodeObjectCreatorService
+		JsonConfigReader jsonNode = jsonNodeObjectCreatorService
 				.getJsonNodeObject(filepath);
 
 		// verify

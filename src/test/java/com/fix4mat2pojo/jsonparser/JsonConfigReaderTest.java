@@ -1,4 +1,4 @@
-package com.fix4mat2pojo.jsonconfig.parser;
+package com.fix4mat2pojo.jsonparser;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -10,24 +10,24 @@ import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonProcessingException;
 import org.junit.Test;
 
+import com.fix4mat2pojo.jsonparser.JsonConfigReader;
 import com.fix4mat2pojo.utility.LocalProperties;
-import com.fix4matpojo.service.JsonNodeObjectCreatorService;
+import com.fix4matpojo.service.JsonConfigReaderService;
 
-public class JsonParserTest {
+public class JsonConfigReaderTest {
 
 	@Test
 	public void itShouldREturntheClassNameFromJsonObject()
 			throws JsonProcessingException, IOException {
 		// setup data
-		JsonNodeObjectCreatorService jsonNodeObjectCreatorService = new JsonNodeObjectCreatorService();
-		JsonNode jsonNode = jsonNodeObjectCreatorService
+		JsonConfigReaderService jsonNodeObjectCreatorService = new JsonConfigReaderService();
+		JsonConfigReader jsonParser = jsonNodeObjectCreatorService
 				.getJsonNodeObject(LocalProperties.getString("jsonfilepath"));
 
 		// setup - expected
 		String expected = "Employee";
 
 		// exercise
-		JsonParser jsonParser = new JsonParser(jsonNode);
 		String actual = jsonParser.getJSONClassName();
 
 		// verify
@@ -39,25 +39,25 @@ public class JsonParserTest {
 	public void itShouldREturntheFieldsJsonNodeFromJsonObject()
 			throws JsonProcessingException, IOException {
 		// setup data
-		JsonNodeObjectCreatorService jsonNodeObjectCreatorService = new JsonNodeObjectCreatorService();
-		JsonNode jsonNode = jsonNodeObjectCreatorService
+		JsonConfigReaderService jsonNodeObjectCreatorService = new JsonConfigReaderService();
+		JsonConfigReader jsonParser = jsonNodeObjectCreatorService
 				.getJsonNodeObject(LocalProperties.getString("jsonfilepath"));
 
 		// exercise
-		JsonParser jsonParser = new JsonParser(jsonNode);
 		JsonNode jsonNodeFields = jsonParser.getJSONFields();
-
+		
 		// verify
 		assertNotNull(jsonNodeFields);
-		Iterator<JsonNode> ite = jsonNodeFields.getElements();
 		
+		JsonNode jsonField = jsonNodeFields.get(0);
+		Iterator<JsonNode> ite = jsonField.getElements();
 		while (ite.hasNext()) {
 			JsonNode temp = ite.next();
-			Iterator<JsonNode> tempite = temp.getElements();
-			while (tempite.hasNext()) {
-				System.out.println(tempite.getTextValue());
-			}
+			System.out.println(temp.getTextValue());
+
 		}
+		
+		
 	}
 
 }
