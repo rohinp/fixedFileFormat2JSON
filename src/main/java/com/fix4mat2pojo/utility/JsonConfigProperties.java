@@ -12,11 +12,7 @@ public class JsonConfigProperties {
 	private JsonConfigProperties() {
 	}
 
-	public static String getString(String key) {
-		try {
-			return RESOURCE_BUNDLE.getString(key);
-		} catch (MissingResourceException e) {
-			return '!' + key + '!';
-		}
+	public static String getString(String key) throws MissingResourceException{
+		return RESOURCE_BUNDLE.getString(key);
 	}
 }

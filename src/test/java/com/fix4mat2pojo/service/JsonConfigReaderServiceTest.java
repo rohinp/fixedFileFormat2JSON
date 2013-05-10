@@ -12,7 +12,7 @@ import com.fix4mat2pojo.jsonparser.JsonConfigReader;
 import com.fix4mat2pojo.service.JsonConfigReaderService;
 import com.fix4mat2pojo.utility.LocalProperties;
 
-public class JsonNodeObjectCreatorServiceTest {
+public class JsonConfigReaderServiceTest {
 
 	@Test
 	public void itShouldCreateJsonNode() throws JsonProcessingException,
@@ -22,11 +22,11 @@ public class JsonNodeObjectCreatorServiceTest {
 		JsonConfigReaderService jsonNodeObjectCreatorService = new JsonConfigReaderService();
 
 		// exercise
-		JsonConfigReader jsonNode = jsonNodeObjectCreatorService
-				.getJsonNodeObject(filepath);
+		JsonConfigReader jsonConfigReader = jsonNodeObjectCreatorService
+				.createJsonConfigReader(filepath);
 
 		// verify
-		assertNotNull(jsonNode);
+		assertNotNull(jsonConfigReader);
 
 		// no teardown needed
 	}

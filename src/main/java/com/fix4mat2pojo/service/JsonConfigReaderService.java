@@ -10,7 +10,7 @@ import com.fix4mat2pojo.factory.JSONNodeFactory;
 import com.fix4mat2pojo.jsonparser.JsonConfigReader;
 
 public class JsonConfigReaderService {
-	public JsonConfigReader getJsonNodeObject(String filepath)
+	public JsonConfigReader createJsonConfigReader(String filepath)
 			throws JsonProcessingException, IOException {
 		
 		BufferedReader fileReader = FileReaderFactory.makeFile(filepath);

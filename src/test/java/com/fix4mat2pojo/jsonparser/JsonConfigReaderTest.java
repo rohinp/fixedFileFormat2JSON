@@ -22,7 +22,7 @@ public class JsonConfigReaderTest {
 		// setup data
 		JsonConfigReaderService jsonNodeObjectCreatorService = new JsonConfigReaderService();
 		JsonConfigReader jsonParser = jsonNodeObjectCreatorService
-				.getJsonNodeObject(LocalProperties.getString("jsonfilepath"));
+				.createJsonConfigReader(LocalProperties.getString("jsonfilepath"));
 
 		// setup - expected
 		String expected = "Employee";
@@ -41,7 +41,7 @@ public class JsonConfigReaderTest {
 		// setup data
 		JsonConfigReaderService jsonNodeObjectCreatorService = new JsonConfigReaderService();
 		JsonConfigReader jsonParser = jsonNodeObjectCreatorService
-				.getJsonNodeObject(LocalProperties.getString("jsonfilepath"));
+				.createJsonConfigReader(LocalProperties.getString("jsonfilepath"));
 
 		// exercise
 		JsonNode jsonNodeFields = jsonParser.getJSONFields();

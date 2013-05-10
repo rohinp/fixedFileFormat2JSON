@@ -1,7 +1,7 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="com.fix4matpojo.service.JsonNodeObjectCreatorServiceTest" tests="1" failures="0" errors="0" timestamp="2013-05-07T07:54:24" hostname="U2-DPE-CPB-0072" time="0.247">
-  <properties/>
-  <testcase name="itShouldCreateJsonNode" classname="com.fix4matpojo.service.JsonNodeObjectCreatorServiceTest" time="0.247"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="localhost" name="com.fix4matpojo.service.JsonNodeObjectCreatorServiceTest" tests="1" time="0.321" timestamp="2013-05-10T03:35:15">
+  <properties />
+  <testcase classname="com.fix4matpojo.service.JsonNodeObjectCreatorServiceTest" name="itShouldCreateJsonNode" time="0.244" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

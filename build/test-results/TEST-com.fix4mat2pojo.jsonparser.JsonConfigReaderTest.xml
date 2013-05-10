@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="localhost" name="com.fix4mat2pojo.jsonparser.JsonConfigReaderTest" tests="2" time="0.017" timestamp="2013-05-10T03:35:16">
+  <properties />
+  <testcase classname="com.fix4mat2pojo.jsonparser.JsonConfigReaderTest" name="itShouldREturntheClassNameFromJsonObject" time="0.008" />
+  <testcase classname="com.fix4mat2pojo.jsonparser.JsonConfigReaderTest" name="itShouldREturntheFieldsJsonNodeFromJsonObject" time="0.001" />
+  <system-out><![CDATA[Employee
+eid
+5
+long
+space
+1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
