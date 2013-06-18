@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="localhost" name="com.fix4mat2pojo.factory.JSONNodeFactoryTest" tests="1" time="0.007" timestamp="2013-05-10T03:35:16">
-  <properties />
-  <testcase classname="com.fix4mat2pojo.factory.JSONNodeFactoryTest" name="itShouldCreateJsonNode" time="0.003" />
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
